@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Account</title>
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="../Images/mylogo.png" alt="">
+        </div>
+        <div class="title"></div>
+    </div>
+        <form action="signupprocess.php" method="POST">
+            
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <h2>Create New Account</h2>
+            <label for="name">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="first" required="required" placeholder="First">
+            <input type="text" name="middle" placeholder="Middle">
+            <input type="text" name="last" required="required" placeholder="Last">
+            <br><br>
+            <label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" name="email" placeholder="Enter Your Email">
+            <br><br>
+            <label for="">Contact</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number" max="10" name="contact">
+            <br><br>
+            <label for="Address">Address</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="address">
+            <br><br>
+            <label for="password">Password</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="password">
+            <br><br>
+            <label for="Question">Security Question</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="security" id="">
+                <option value="">What is your pet name?</option>
+                <option value="">What is your school name?</option>
+                <option value="">What is your favourite sports?</option>
+            </select>
+            <br><br>
+            <label for="answer">Answer</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="answer">
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="submit" class="but">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            Submit</button> &nbsp;&nbsp;
+            <button type="reset" class="but">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Reset</button>
+
+
+        </form>
+    
+    
+</body>
+</html>
