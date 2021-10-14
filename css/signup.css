@@ -12,24 +12,23 @@ body{
 
 }
 
-.logo img{
+img{
     width: 100px;
     height: 120px;
-    margin-left: 10%;
+    margin-left: 13%;
+    position: relative;
+    top: -350px;
+    
 }
 
-.logo{
-    left: 100px;
-    width: 80%;
-    height: 20vh;
-}
+
 
 form h2{
     text-align: center;
 }
 form{
-    margin-top: 20px;
-    margin-left: 200px;
+    margin-top: 50px;
+    margin-left: 0px;
     display: inline-block;
     position: relative;
     overflow: hidden;

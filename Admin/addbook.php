@@ -190,6 +190,7 @@ form label{
             <span></span>
             <span></span>
             <span></span>
+            <br>
             <h2>Add New Book</h2><br><br>
             <label for="name">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text" name="bname" placeholder="Enter Book Name">
@@ -221,7 +222,7 @@ form label{
                 <span></span>
                 <span></span>
                 <span></span>
-                Reset</button>
+                Reset</button><br><br>
 
 
         </form>

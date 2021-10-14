@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create New Account</title>
     <link rel="stylesheet" href="../css/signup.css">
+    <style>
+        h2{
+            color:white;
+        }
+    </style>
 </head>
 <body>
-    <div class="main">
-        <div class="logo">
-            <img src="../Images/mylogo.png" alt="">
-        </div>
-        <div class="title"></div>
-    </div>
-        <form action="signupprocess.php" method="POST">
+    
+        
+            <img src="../Images/lightlogo.png" alt="">
+        
+    
+        <form action="../process/signupprocess.php" method="POST">
             
             <span></span>
             <span></span>
@@ -23,30 +27,29 @@
             <h2>Create New Account</h2>
             <label for="name">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text" name="first" required="required" placeholder="First">
-            <input type="text" name="middle" placeholder="Middle">
             <input type="text" name="last" required="required" placeholder="Last">
             <br><br>
             <label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="email" name="email" placeholder="Enter Your Email">
             <br><br>
             <label for="">Contact</label>&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="number" max="10" name="contact">
+            <input type="integer" name="contact" placeholder="Enter Your Contact">
             <br><br>
             <label for="Address">Address</label>&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="text" name="address">
+            <input type="text" name="address" placeholder="Enter Your Address">
             <br><br>
             <label for="password">Password</label>&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="text" name="password">
+            <input type="text" name="password" placeholder="Enter Your Password">
             <br><br>
             <label for="Question">Security Question</label>&nbsp;&nbsp;&nbsp;&nbsp;
             <select name="security" id="">
-                <option value="">What is your pet name?</option>
-                <option value="">What is your school name?</option>
-                <option value="">What is your favourite sports?</option>
+                <option >What is your pet name?</option>
+                <option >What is your school name?</option>
+                <option >What is your favourite sports?</option>
             </select>
             <br><br>
             <label for="answer">Answer</label>&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="text" name="answer">
+            <input type="text" name="answer" placeholder="Answer To Your Question">
             <br><br>&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button type="submit" class="but">
