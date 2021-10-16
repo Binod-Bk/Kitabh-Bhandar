@@ -184,7 +184,7 @@ form label{
 
 </style>
 
-    <form action="signupprocess.php" method="POST">
+    <form action="../process/addbook.php" method="POST">
             
             <span></span>
             <span></span>
@@ -195,20 +195,23 @@ form label{
             <label for="name">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text" name="bname" placeholder="Enter Book Name">
             <br><br>
-            <label for="email">Author</label>&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="email" name="author" placeholder="Enter Author Name">
+            <label for="author">Author</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="author" placeholder="Enter Author Name">
             <br><br>
-            <label for="">ISBN No.</label>&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="number" max="20" name="isbn" placeholder="Enter Book ISBN No.">
+            <label for="isbn_no">ISBN No.</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number"  name="isbn" placeholder="Enter Book ISBN No.">
             <br><br>
-            <label for="Address">Publication</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="publication">Publication</label>&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text" name="publication" placeholder="Enter Publication Name">
             <br><br>
-            <label for="password">Edition</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="edition">Edition</label>&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text" name="edition" placeholder="Enter Book's Edition">
             <br><br>
-            <label for="answer">Release Date</label>&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="text" name="release" placeholder="Enter Book's Release Date">
+            <label for="release_date">Release Date</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" name="release" placeholder="Enter Book's Release Date">
+            <br><br>
+            <label for="image">Image</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="file" name="image" placeholder="Book Image">
             <br><br>&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button type="submit" class="but" >
