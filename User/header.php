@@ -97,9 +97,11 @@
                     </ul>  
                     </div>          
             </li>
-                <li> <a href="addbook.php">Add Books</a></li>
-                <li><a href="addbook.php">Rented Books</a></li>
-                <li><a href="addbook.php">Ordered Books</a></li>
+                <li> <a href="addbook.php">Sell Books</a></li>
+                <li><a href="addbook.php">Rent Books</a></li>
+                <li><a href="addbook.php">My History</a></li>
+                <li><a href="addbook.php">About Us</a></li>
+                <li><a href="addbook.php">Contact Us</a></li>
                 <!-- <li>
                     <img src="../Images/user.png" alt="">
                 </li> -->
