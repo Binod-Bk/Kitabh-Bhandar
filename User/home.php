@@ -7,6 +7,7 @@ body{
     padding: 0;
     margin:0;
     overflow: hidden;
+    font-family:monospace;
 }
 .slider{
    
@@ -144,8 +145,8 @@ body{
 }
 .overlay p{
     position:relative;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 22px;
     top:40px;
 }
 .overlay span{
@@ -170,8 +171,8 @@ body{
         <h1>Welcome To Our Website.</h1><br>
         <span></span>
         <p>Grow your knowlege. <br>
-        Search the book of your interest and get the knowlege beyond text books.
-
+        Search the book of your interest and get the knowlege beyond text books.<br>
+        Also help us grow by providing us with your old used books.
         </p>
         </div>
     </div>
@@ -182,7 +183,8 @@ body{
         <h1>Welcome To Our Website.</h1><br>
         <span></span>
         <p>Grow your knowlege. <br>
-        Search the book of your interest and get the knowlege beyond text books.
+        Search the book of your interest and get the knowlege beyond text books. <br>
+        Also help us grow by providing us with your old used books.
 
         </p>
     </div>
@@ -194,8 +196,8 @@ body{
         <h1>Welcome To Our Website.</h1><br>
         <span></span>
         <p>Grow your knowlege. <br>
-        Search the book of your interest and get the knowlege beyond text books.
-
+        Search the book of your interest and get the knowlege beyond text books.<br>
+        Also help us grow by providing us with your old used books.
         </p>
     </div>
     </div>
@@ -206,8 +208,8 @@ body{
        <h1>Welcome To Our Website.</h1><br>
         <span></span>
         <p>Grow your knowlege. <br>
-        Search the book of your interest and get the knowlege beyond text books.
-
+        Search the book of your interest and get the knowlege beyond text books.<br>
+        Also help us grow by providing us with your old used books.
         </p>
     </div>
     </div>

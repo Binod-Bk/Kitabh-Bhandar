@@ -10,8 +10,9 @@ $pubication = $_POST['publication'];
 $edition = $_POST['edition'];
 $release = $_POST['release'];
 $image = $_POST['image'];
+$category = $_POST['category'];
 
-$sql = "INSERT INTO book values('$isbn','$name','$author','$pubication','$edition','$release','$image')";
+$sql = "INSERT INTO book values('$isbn','$name','$author','$pubication','$edition','$release','$image','$category')";
 
 if($conn ->query($sql)){
     echo "<script> alert('Book Added Successfully. ');  

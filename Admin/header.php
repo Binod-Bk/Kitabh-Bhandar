@@ -9,6 +9,7 @@
         *{
             margin: 0;
             padding: 0;
+            font-family:monospace;
         }
         header{
             background:#2F4F4F;
@@ -37,6 +38,7 @@
             list-style: none;
             padding:5px 15px;
             border: 1px solid black;
+            border-radius:7px;
         }
          ul li a{
             text-decoration: none;
@@ -86,7 +88,7 @@
                 <div class="menu">
             <ul>
                 <li><a href="home.php">Home</a></li>
-               <li> <a href="addbook.php">Book Gallery </a>
+               <li> <a href="gallery.php">Book Gallery </a>
                <div class="dropdown">
                     <ul>
                         <li><a href="">Romance</a> </li>

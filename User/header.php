@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Admin Homepage</title>
     <style>
         *{
@@ -37,6 +38,7 @@
             list-style: none;
             padding:5px 15px;
             border: 1px solid black;
+            border-radius:7px;
         }
          ul li a{
             text-decoration: none;
@@ -86,7 +88,7 @@
                 <div class="menu">
             <ul>
                 <li><a href="home.php">Home</a></li>
-               <li> <a href="addbook.php">Book Gallery </a>
+               <li> <a href="gallery.php">Book Gallery </a>
                <div class="dropdown">
                     <ul>
                         <li><a href="">Romance</a> </li>
@@ -97,11 +99,12 @@
                     </ul>  
                     </div>          
             </li>
-                <li> <a href="addbook.php">Sell Books</a></li>
-                <li><a href="addbook.php">Rent Books</a></li>
-                <li><a href="addbook.php">My History</a></li>
-                <li><a href="addbook.php">About Us</a></li>
-                <li><a href="addbook.php">Contact Us</a></li>
+                <li> <a href="sellbook.php">Sell Books</a></li>
+                <li><a href="myrent.php">Rent Books</a></li>
+                <li><a href="history.php">My History</a></li>
+                <li><a href="about.php">About Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="profile.php">My Profile</a></li>
                 <!-- <li>
                     <img src="../Images/user.png" alt="">
                 </li> -->

@@ -210,6 +210,15 @@ form label{
             <label for="release_date">Release Date</label>&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="date" name="release" placeholder="Enter Book's Release Date">
             <br><br>
+            <label for="category">Category</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="category" id="">
+                <option value="Romance">Romance</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Mysteries">Mysteries</option>
+                <option value="Fiction">Fiction</option>
+            </select>
+            <br><br>
             <label for="image">Image</label>&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="file" name="image" placeholder="Book Image">
             <br><br>&nbsp;&nbsp;&nbsp;&nbsp;

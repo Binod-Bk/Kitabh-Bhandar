@@ -13,13 +13,11 @@ $password= $_POST['password'];
 $security = $_POST['security'];
 $answer = $_POST['answer'];
 
-$query = "INSERT INTO user(email,fname,address,contact,security,answer,password,lname) values('$email','$fname','$address','$contact','$security','$answer','$password','$lname')";
+$query = "INSERT INTO user(email,fname,lname,address,contact,security,answer,password) values('$email','$fname','$lname','$address','$contact','$security','$answer','$password')";
 
 if($conn->query($query)){
 
-	echo "<script> alert('Sign Up Successfully. ');  
-			window.location.href='../User/login.html';</script> " ;
-
+	header("Location:../User/login.php?sms=Sign Up Successfull. Try Loggin Now.");
 }else{
 	echo ("Error occur" . $conn -> error);
 }
