@@ -12,6 +12,9 @@ $result = $conn->query($sql);
 if($result->num_rows==1){
     $row=$result->fetch_assoc();
         if($row['password'] == $password){
+            $id = $row['id'];
+            session_start();
+            $_SESSION['loginuser'] = $id;
             header("Location:../User/home.php");
         }else{
             header("Location:../User/login.php?msg=Incorrect Password. Please Try Again.");    

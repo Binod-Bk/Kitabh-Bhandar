@@ -80,7 +80,7 @@ include('header.php');
 <div class="container">
 <section>
     <ul>
-    <li class="list"><a href="gallery.php">All</a> </li>
+        <li class="list"><a href="gallery.php">All</a> </li>
         <li class="list"><a href="romance.php">Romance</a></li>
         <li class="list"><a href="fantasy.php">Fantasy</a></li>
         <li class="list"><a href="thriller.php">Thriller</a></li>
@@ -91,7 +91,7 @@ include('header.php');
 <?php
     
     include("../database/connection.php");
-    $sql  = "SELECT * from book ";
+    $sql  = "SELECT * from book where category='Mystery'";
     $result = $conn->query($sql);
     if($result->num_rows > 0){
         while($row = $result->fetch_assoc()){
@@ -109,8 +109,7 @@ include('header.php');
          <input type="hidden" value="<?php echo $row['publication'];  ?> " name="publication" readonly="readonly">
         <input type="hidden" value="<?php echo $row['isbn'];  ?> " name="isbn" readonly="readonly">
         <input type="hidden" value="<?php echo $row['release_date'];  ?> " name="date" readonly="readonly">
-        <input type="hidden" value="<?php echo $row['category'];  ?> " name="category" readonly="readonly">
-        Availability:<input type="text" value="<?php echo $row['availability'];  ?> " name="availability" readonly="readonly"><br>
+        Category:<input type="text" value="<?php echo $row['category'];  ?> " name="category" readonly="readonly"><br>
             <button type="submit" name="action" value="cart">Rent Now</button>
             <button type ="submit" name="action" value="details">View Details</button>
         
@@ -118,7 +117,6 @@ include('header.php');
         </div>
         
 </div>
-
 <?php
 }
 }else{
@@ -127,7 +125,6 @@ echo "<h2>No Records Found.</h2>";
 ?>
 
 </div>
-
       
     
         

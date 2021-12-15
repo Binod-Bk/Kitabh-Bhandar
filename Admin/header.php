@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Homepage</title>
+    <title>Kitabh Bhandar</title>
     <style>
         *{
             margin: 0;
@@ -100,8 +100,9 @@
                     </div>          
             </li>
                 <li> <a href="addbook.php">Add Books</a></li>
-                <li><a href="addbook.php">Rented Books</a></li>
-                <li><a href="addbook.php">Ordered Books</a></li>
+                <li><a href="sellrequest.php">Sell Request </a></li>
+                <li><a href="ordered_books.php">Ordered Books</a></li>
+                <li><a href="logout.php">Log Out</a></li>
                 <!-- <li>
                     <img src="../Images/user.png" alt="">
                 </li> -->

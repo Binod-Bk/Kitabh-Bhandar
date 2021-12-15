@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Admin Homepage</title>
+    <title>Kitabh Bhandar</title>
     <style>
         *{
             margin: 0;
@@ -20,7 +20,12 @@
             height:50px;
             
         }
-        
+        .myli{
+            margin:2px;
+            padding:5px;
+            
+            
+        }
         
         header img{
             width:99px;
@@ -33,10 +38,13 @@
             padding: 12px 0px;
             
         }
+        ul{
+            margin-top:-12px;
+        }
          ul li{
             display: inline-block;
             list-style: none;
-            padding:5px 15px;
+            padding:7px 15px;
             border: 1px solid black;
             border-radius:7px;
         }
@@ -76,6 +84,15 @@
             display:block;
         }
         
+      li  #proimg{
+        display:inline-block;
+        width:35px;
+        height: 25px;
+        border-radius:5px;
+        margin:0px;
+        padding:0px;
+    }
+        
       
     </style>
 </head>
@@ -100,11 +117,29 @@
                     </div>          
             </li>
                 <li> <a href="sellbook.php">Sell Books</a></li>
-                <li><a href="myrent.php">Rent Books</a></li>
+                <!-- <li><a href="myrent.php">Rent Books</a></li> -->
                 <li><a href="history.php">My History</a></li>
+                <li><a href="mycart.php">My Cart</a></li>
                 <li><a href="about.php">About Us</a></li>
                 <li><a href="contact.php">Contact Us</a></li>
-                <li><a href="profile.php">My Profile</a></li>
+               <?php session_start();
+        if( isset($_SESSION["loginuser"]) ){
+            $id=$_SESSION['loginuser'];
+            include('../database/connection.php');
+            $sql ="SELECT * FROM user where id=$id";
+            $result = $conn ->query($sql);
+            if($result->num_rows==1){
+                $row=$result->fetch_assoc();
+                ?>
+          <li class="myli">  <a href="myprofile.php">  <img src="../Images/<?php echo $row['image'];?>" id="proimg" alt=""></a></li> 
+              <li> <a href="../process/logout.php">Log Out</a></li> 
+                <?php
+            }
+            }else{ ?>
+           <li>  <a href="login.php">Log In</a></li>
+            <?php
+            } ?>
+            
                 <!-- <li>
                     <img src="../Images/user.png" alt="">
                 </li> -->
